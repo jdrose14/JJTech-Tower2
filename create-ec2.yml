@@ -22,12 +22,6 @@
             delete_on_termination: true
             encrypted: true
       name: "{{ instance_name }}"
-      tags:
-        created_by: "{{ created_by }}"
-        Owner: "{{ Owner }}"
-        App_Name: "{{ App_Name }}"
-        Cost_Center: "{{ Cost_Center }}"
-        Business_Unit: "{{ Business_Unit }}"
       user_data: |
         #!/bin/bash
         yum update -y
